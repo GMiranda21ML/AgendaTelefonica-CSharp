@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AgendaDeContatos", "AgendaDeContatos.csproj", "{DF409812-098E-4939-8F31-392E62663906}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF409812-098E-4939-8F31-392E62663906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF409812-098E-4939-8F31-392E62663906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF409812-098E-4939-8F31-392E62663906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF409812-098E-4939-8F31-392E62663906}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E1553657-3FC3-4190-ABA7-878D74337F1F}
+	EndGlobalSection
+EndGlobal
