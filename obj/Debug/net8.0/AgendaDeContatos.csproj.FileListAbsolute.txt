@@ -12,3 +12,4 @@ C:\Gabriel Miranda\linguagens e afins\AgendaDeContatos\obj\Debug\net8.0\refint\A
 C:\Gabriel Miranda\linguagens e afins\AgendaDeContatos\obj\Debug\net8.0\AgendaDeContatos.pdb
 C:\Gabriel Miranda\linguagens e afins\AgendaDeContatos\obj\Debug\net8.0\AgendaDeContatos.genruntimeconfig.cache
 C:\Gabriel Miranda\linguagens e afins\AgendaDeContatos\obj\Debug\net8.0\ref\AgendaDeContatos.dll
+C:\Gabriel Miranda\linguagens e afins\AgendaDeContatos\obj\Debug\net8.0\AgendaDeContatos.sourcelink.json

@@ -24,7 +24,7 @@ class Program
 Digite 1 para armazenar um contato
 Digite 2 para visualizar seus contatos
 Digite 3 para atualizar um de seus contatos
-Digite 3 para deletar um de seus contatos
+Digite 4 para deletar um de seus contatos
 Digite 0 para sair");
 
     }
@@ -37,6 +37,13 @@ Digite 0 para sair");
     }
 
 
+    static string TitleCase(string text)
+    {
+        TextInfo textInfo = CultureInfo.CurrentCulture.TextInfo;
+        return textInfo.ToTitleCase(text.ToLower());
+    }
+
+
     static void Armazenar(Dictionary<string, string> agenda)
     {
         Console.Clear();
@@ -46,6 +53,7 @@ Digite 0 para sair");
 ");
         Console.Write("Digite o nome da pessoa que você deseja armazenar na agenda: ");
         string nome = Console.ReadLine()!;
+        nome = TitleCase(nome);
         Console.Write($"Digite o telefone de {nome}: ");
         string telefone = Console.ReadLine()!;
 
@@ -84,6 +92,7 @@ Telefone: {contato.Value}
 
         Console.Write("\nDigite o nome do contato que você deseja atualizar: ");
         string contatoParaAtualizar = Console.ReadLine()!;
+        contatoParaAtualizar = TitleCase(contatoParaAtualizar);
 
         if (agenda.ContainsKey(contatoParaAtualizar))
         {
@@ -98,6 +107,7 @@ Telefone: {contato.Value}
                     case 1:
                         Console.Write("Digite o novo nome para o seu contato: ");
                         string nomeNovo = Console.ReadLine()!;
+                        nomeNovo = TitleCase(nomeNovo);
 
                         string tel = agenda[contatoParaAtualizar];
 
@@ -147,6 +157,7 @@ Telefone: {contato.Value}
 
         Console.Write("Digite o nome do contato que você deseja deletar: ");
         string contatoParaDeletar = Console.ReadLine()!;
+        contatoParaDeletar = TitleCase(contatoParaDeletar);
 
         if (agenda.ContainsKey(contatoParaDeletar))
         {
@@ -164,7 +175,6 @@ Telefone: {contato.Value}
 
     static void Main()
     {
-        // lembrar de usar depois o toTitleCase
         Dictionary<string, string> agenda = new Dictionary<string, string>();
 
         while (true)
@@ -210,13 +220,10 @@ Telefone: {contato.Value}
                 Console.WriteLine("Opção invalida! Por favor, digite novamente.");
             }
 
-
-
             LimparTela();
 
         }
         
-
-
     }
+
 }
